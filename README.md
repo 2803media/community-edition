@@ -43,7 +43,7 @@
 
 1. Expose Plausible server to the web with a [compose override file:](https://github.com/plausible/community-edition/wiki/compose-override)
 
-    ```console
+    ```sh
     $ echo "HTTP_PORT=80" >> .env
     $ echo "HTTPS_PORT=443" >> .env
 
