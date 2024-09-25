@@ -46,7 +46,7 @@ $ sudo systemctl restart apache2
 $ sudo certbot --apache
 ```
 #### Apache2 Modsecurity
-If you use Modsecurity as a Waff to your Apache2 configuration you will need to add some custom rules in order to not block Plausible. Here are some rules, feel free to adapt to your specific case:
+Modsecurity block with CRS the "plain/text" used by Plausible and ".com" in headers so if you use Modsecurity as a Waff to your Apache2 configuration you will need to add some custom rules in order to not block Plausible. Here are some rules, feel free to adapt to your specific case:
 
 ```shell
 # Autoriser text/plain pour la route /api/event
